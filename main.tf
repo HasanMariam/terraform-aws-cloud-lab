@@ -23,7 +23,7 @@ output "random_string_value" {
 }
 
 resource "aws_s3_bucket" "demo_backet" {
-    bucket = "hasan-tf-${random_string.demorandoemstring.result}"
+    bucket = "hasan-tf-${random_string.demorandoemstring.result}-v2"
   
 }
 
