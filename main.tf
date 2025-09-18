@@ -15,6 +15,8 @@ provider "random" {
 }
 resource "random_string" "demorandoemstring" {
   length = 8
+  upper = false
+  special = false
 }
 output "random_string_value" {
   value = random_string.demorandoemstring.result
