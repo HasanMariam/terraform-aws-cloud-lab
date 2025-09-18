@@ -19,3 +19,9 @@ resource "random_string" "demorandoemstring" {
 output "random_string_value" {
   value = random_string.demorandoemstring.result
 }
+
+resource "aws_s3_bucket" "demo_backet" {
+    bucket = "hasan-tf-${random_string.demorandoemstring.result}"
+  
+}
+
